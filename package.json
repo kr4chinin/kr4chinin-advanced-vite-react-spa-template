@@ -34,7 +34,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "eslint-plugin-regexp": "^2.6.0",
-    "nano-staged": "^0.8.0",
+    "lint-staged": "^15.2.5",
     "prettier": "^3.3.0",
     "prettier-plugin-organize-imports": "^3.2.4",
     "simple-git-hooks": "^2.11.1",
@@ -57,14 +57,7 @@
   "resolutions": {
     "styled-components": "^6"
   },
-  "nano-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
-  },
   "simple-git-hooks": {
-    "pre-commit": "./node_modules/.bin/nano-staged",
     "pre-push": "npm run ts"
   }
 }
