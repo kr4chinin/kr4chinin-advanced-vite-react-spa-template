@@ -58,6 +58,7 @@
     "styled-components": "^6"
   },
   "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
     "pre-push": "npm run ts"
   }
 }
