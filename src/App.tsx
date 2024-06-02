@@ -8,7 +8,11 @@ const Root = styled.div`
 `;
 
 const App = () => {
-  return <Root>123</Root>;
+  return <Root>
+    
+    
+    
+    123</Root>;
 };
 
 export { App };
