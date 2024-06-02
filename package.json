@@ -41,7 +41,8 @@
     "prettier-plugin-organize-imports": "^3.2.4",
     "typescript": "^5.4.5",
     "vite": "^5.2.12",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-svgr": "^4.2.0"
   },
   "browserslist": {
     "production": [

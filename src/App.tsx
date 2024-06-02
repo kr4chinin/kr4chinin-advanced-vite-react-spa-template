@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ReactLogo from './assets/react.svg?react';
 
 const Root = styled.div`
   display: flex;
@@ -8,7 +9,11 @@ const Root = styled.div`
 `;
 
 const App = () => {
-  return <Root>321 123 123</Root>;
+  return (
+    <Root>
+      <ReactLogo />
+    </Root>
+  );
 };
 
 export { App };

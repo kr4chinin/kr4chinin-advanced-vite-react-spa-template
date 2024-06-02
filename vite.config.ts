@@ -1,5 +1,6 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
+import svgr from 'vite-plugin-svgr';
 
 // @ts-ignore
 // Waiting for the patch to resolve type issue
@@ -33,6 +34,9 @@ export default defineConfig({
     eslint({
       exclude: ['/virtual:/**', 'node_modules/**'],
     }),
+    // https://github.com/pd4d10/vite-plugin-svgr#readme
+    // Imports should look like this – "import ReactLogo from './assets/react.svg?react';""
+    svgr(),
   ],
   server: {
     port: 3000,
