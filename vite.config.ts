@@ -38,4 +38,19 @@ export default defineConfig({
     port: 3000,
     host: '0.0.0.0',
   },
+  build: {
+    minify: true,
+    outDir: 'build',
+    sourcemap: true,
+    cssCodeSplit: true,
+    assetsDir: 'assets',
+
+    rollupOptions: {
+      output: {
+        chunkFileNames: 'assets/[name].[hash].js',
+        entryFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash][extname]',
+      },
+    },
+  },
 });
