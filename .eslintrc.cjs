@@ -41,7 +41,7 @@ module.exports = {
         position: 'above',
       },
     ],
-    
+
     // Configure padding rules before and after variable declarations and statements
     'padding-line-between-statements': [
       'warn',
@@ -66,7 +66,7 @@ module.exports = {
 
     // Warns if a button does not have an explicit type attribute
     'react/button-has-type': 1,
-    
+
     // Named components must be arrow functions
     'react/function-component-definition': [
       1,
