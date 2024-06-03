@@ -11,13 +11,13 @@ import eslint from 'vite-plugin-eslint';
 export default defineConfig({
   plugins: [
     react({
-      // For styled components transform to readable classnames
       babel: {
         presets: ['@babel/preset-typescript'],
         plugins: [
           '@babel/plugin-transform-typescript',
           '@babel/plugin-proposal-class-properties',
           [
+            // For styled components transform to readable classnames
             // https://github.com/styled-components/babel-plugin-styled-components
             'babel-plugin-styled-components',
             {
@@ -38,21 +38,38 @@ export default defineConfig({
     // Imports should look like this – "import ReactLogo from './assets/react.svg?react';""
     svgr(),
   ],
+  // Will run on http://localhost:3000
   server: {
     port: 3000,
     host: '0.0.0.0',
   },
+
   build: {
+    // Enable minification of the output files
     minify: true,
+
+    // Directory to output the built files
     outDir: 'build',
+
+    // Generate source maps for debugging purposes
     sourcemap: true,
+
+    // Enable CSS code splitting, which creates separate CSS files instead of inline styles
     cssCodeSplit: true,
+
+    // Directory for placing built assets (like images, fonts, etc.)
     assetsDir: 'assets',
 
+    // Rollup options for more granular control over the build process
     rollupOptions: {
       output: {
+        // Naming convention for chunk files
         chunkFileNames: 'assets/[name].[hash].js',
+
+        // Naming convention for entry files
         entryFileNames: 'assets/[name].[hash].js',
+
+        // Naming convention for asset files (like images, fonts, etc.)
         assetFileNames: 'assets/[name].[hash][extname]',
       },
     },
