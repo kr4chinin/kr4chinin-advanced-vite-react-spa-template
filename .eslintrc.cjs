@@ -3,9 +3,11 @@ module.exports = {
   extends: [
     // Extends the default configuration for React apps
     'react-app',
+
     // Extends recommended rules for TanStack Query
     // https://tanstack.com/query/v4/docs/eslint/eslint-plugin-query
     'plugin:@tanstack/eslint-plugin-query/recommended',
+
     // Extends recommended rules for working with regular expressions
     // https://github.com/ota-meshi/eslint-plugin-regexp
     'plugin:regexp/recommended',
@@ -13,9 +15,11 @@ module.exports = {
   plugins: [
     // Plugin for TanStack Query
     '@tanstack/query',
+
     // Plugin for stylistic rules
     // https://www.npmjs.com/package/@stylistic/eslint-plugin
     '@stylistic',
+
     // Plugin for regex rules
     'regexp',
   ],
@@ -37,6 +41,7 @@ module.exports = {
         position: 'above',
       },
     ],
+    
     // Configure padding rules before and after variable declarations and statements
     'padding-line-between-statements': [
       'warn',
@@ -58,8 +63,10 @@ module.exports = {
     ],
     // Disables the TypeScript specific no-redeclare rule
     '@typescript-eslint/no-redeclare': 0,
+
     // Warns if a button does not have an explicit type attribute
     'react/button-has-type': 1,
+    
     // Named components must be arrow functions
     'react/function-component-definition': [
       1,
