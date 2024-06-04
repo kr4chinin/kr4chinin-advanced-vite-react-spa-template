@@ -27,7 +27,7 @@ npm run prepare
 npm start
 ```
 
-Do not forget to change **author** and other specific information in `package.json`.
+Do not forget to change **author** and other specific information in `package.json`, remove `LICENSE.txt` and `README.md` files and add your own before publishing your app.
 
 ### Scripts
 
