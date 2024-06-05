@@ -11,6 +11,7 @@ and tools. Perfect option to bootstrap your next project.
   - [Tools and libraries](#tools-and-libraries)
     - [Libraries](#libraries)
     - [Tools](#tools)
+    - [CSS](#css)
     - [Plugins](#plugins)
     - [tsconfig.json](#tsconfigjson)
     - [vite.config.ts](#viteconfigts)
@@ -103,6 +104,13 @@ More information [here](https://vercel.com/docs/deployments/configure-a-build#bu
 - [Husky](https://typicode.github.io/husky/#/) – git hooks manager;
 - [lint-staged](https://github.com/okonet/lint-staged) – linter for staged files;
 - [Babel](https://babeljs.io/) – transpiler.
+
+### CSS
+
+- **reset.css** – with custom styles, and styles from [https://meyerweb.com/](https://meyerweb.com/) and [https://github.com/elad2412/the-new-css-reset](https://github.com/elad2412/the-new-css-reset) configs;
+- [normalize.css](https://necolas.github.io/normalize.css/) – normalize styles;
+- **variables.css** – for css variables;
+- **main.css** – for global styles.
 
 ### Plugins
 
