@@ -1,6 +1,6 @@
 # kr4chinin advanced Vite React SPA template ⚛️
 
-Pre-configured **template** for React SPA apps with the most popular libraries
+Pre-configured **template** for **React SPA** apps with the most popular libraries
 and tools. Perfect option to bootstrap your next project.
 
 - [kr4chinin advanced Vite React SPA template ⚛️](#kr4chinin-advanced-vite-react-spa-template-️)
@@ -116,14 +116,14 @@ More information [here](https://vercel.com/docs/deployments/configure-a-build#bu
 
 - [prettier-plugin-organize-imports](https://www.npmjs.com/package/prettier-plugin-organize-imports) – automatically organize imports;
 - [@stylistic/eslint-plugin](https://eslint.style/packages/default) – `eslint` plugin for stylistic rules (padding, indentation, etc.);
-- [@babel/plugin-transform-typescript](https://babeljs.io/docs/babel-plugin-transform-typescript) – transpile `TypeScript` to JavaScript;
-- [@babel/plugin-transform-class-properties](https://babeljs.io/docs/babel-plugin-transform-class-properties) – transpile class properties to JavaScript;
-- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react) - React plugin for Vite;
+- [@babel/plugin-transform-typescript](https://babeljs.io/docs/babel-plugin-transform-typescript) – transpile `TypeScript` to `JavaScript`;
+- [@babel/plugin-transform-class-properties](https://babeljs.io/docs/babel-plugin-transform-class-properties) – transpile class properties to `JavaScript`;
+- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react) - `React` plugin for `Vite`;
 - [@tanstack/eslint-plugin-query](https://tanstack.com/query/v4/docs/eslint/eslint-plugin-query) – `eslint` plugin for `@tanstack/react-query`;
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) – `eslint` plugin for `React` hooks;
 - [eslint-plugin-regexp](https://github.com/ota-meshi/eslint-plugin-regexp) – `eslint` plugin for _regular expressions_;
 - [vite-plugin-eslint](https://www.npmjs.com/package/vite-plugin-eslint) – `eslint` plugin for `Vite`;
-- [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr) – SVGR plugin for `Vite`, import **SVGs** as `React` components.
+- [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr) – *SVGR* plugin for `Vite`, import **SVGs** as `React` components.
 
 ### tsconfig.json
 
@@ -180,7 +180,7 @@ More information [here](https://vercel.com/docs/deployments/configure-a-build#bu
 
 ### vite.config.ts
 
-`vite.config.ts` is a configuration file for `Vite` build tool. Pre-configured with useful build options and plugins.
+`vite.config.ts` is a configuration file for `Vite` build tool. Pre-configured with useful build options and **plugins**.
 
 ```typescript
 import react from '@vitejs/plugin-react';
