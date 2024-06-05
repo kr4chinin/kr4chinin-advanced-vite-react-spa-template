@@ -3,6 +3,18 @@
 Pre-configured **template** for React SPA apps with the most popular libraries
 and tools. Perfect option to bootstrap your next project.
 
+- [kr4chinin advanced Vite React SPA template ⚛️](#kr4chinin-advanced-vite-react-spa-template-️)
+  - [Quick start](#quick-start)
+    - [Scripts](#scripts)
+    - [Recommended VSCode extensions](#recommended-vscode-extensions)
+  - [Tools and libraries](#tools-and-libraries)
+    - [Libraries](#libraries)
+    - [Tools](#tools)
+    - [Plugins](#plugins)
+    - [tsconfig.json](#tsconfigjson)
+    - [vite.config.ts](#viteconfigts)
+  - [Author](#author)
+
 ## Quick start
 
 In **existing** project directory:
