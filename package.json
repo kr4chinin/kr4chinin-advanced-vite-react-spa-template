@@ -1,5 +1,8 @@
 {
   "name": "kr4chinin-advanced-vite-react-spa-template",
+  "private": false,
+  "version": "1.0.0-beta",
+  "type": "module",
   "author": "Ilya Kruchinin (https://github.com/kr4chinin)",
   "description": "Full featured Vite React SPA template with TypeScript, ESLint, Prettier, Styled Components, React Query, Axios, React Router, Husky, Lint-Staged and Babel configurations and presets. It is a good starting point for your next project.",
   "license": "MIT",
@@ -28,9 +31,6 @@
     "web",
     "development"
   ],
-  "private": false,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "start": "vite",
     "ts": "tsc --noEmit",
