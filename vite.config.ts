@@ -15,7 +15,7 @@ export default defineConfig({
         presets: ['@babel/preset-typescript'],
         plugins: [
           '@babel/plugin-transform-typescript',
-          '@babel/plugin-proposal-class-properties',
+          '@babel/plugin-transform-class-properties',
           [
             // For styled components transform to readable classnames
             // https://github.com/styled-components/babel-plugin-styled-components
