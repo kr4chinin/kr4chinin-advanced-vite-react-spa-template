@@ -6,6 +6,7 @@ and tools. Perfect option to bootstrap your next project.
 - [kr4chinin advanced Vite React SPA template ⚛️](#kr4chinin-advanced-vite-react-spa-template-️)
   - [Quick start](#quick-start)
     - [Scripts](#scripts)
+    - [Vercel Deployment](#vercel-deployment)
     - [Recommended VSCode extensions](#recommended-vscode-extensions)
   - [Tools and libraries](#tools-and-libraries)
     - [Libraries](#libraries)
@@ -54,6 +55,12 @@ Scripts featured in `package.json` file:
 - `npm run format` - run **Prettier** formatter;
 - `npm run preview` - start **preview** server;
 - `npm run prepare` - initialize **Husky** hooks;
+
+### Vercel Deployment
+
+When **deploying** to the [Vercel](https://vercel.com/) platform note that default build dir there is `dist` and in this template it is configured to be named `build`. So you will most likely need to change "Output directory" in Vercel settings to `build`.
+
+More information [here](https://vercel.com/docs/deployments/configure-a-build#build-and-development-settings).
 
 ### Recommended VSCode extensions
 
