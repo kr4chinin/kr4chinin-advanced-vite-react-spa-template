@@ -19,7 +19,7 @@ and tools. Perfect option to bootstrap your next project.
 
 ## Quick start
 
-In **existing** project directory:
+- In **existing** project directory:
 
 ```bash
 # clone repo
@@ -33,6 +33,22 @@ rm -rf .git
 git init
 git add .
 git commit -m "chore: getting started"
+
+# initialize husky hooks
+npm run prepare
+
+# start development server
+npm start
+```
+
+- Same, but without **git** manipulations:
+
+```bash
+# clone repo
+git clone https://github.com/kr4chinin/kr4chinin-advanced-vite-react-spa-template .
+
+# install dependencies
+npm install
 
 # initialize husky hooks
 npm run prepare
