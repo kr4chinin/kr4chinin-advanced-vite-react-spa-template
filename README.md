@@ -139,7 +139,7 @@ More information [here](https://vercel.com/docs/deployments/configure-a-build#bu
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) – `eslint` plugin for `React` hooks;
 - [eslint-plugin-regexp](https://github.com/ota-meshi/eslint-plugin-regexp) – `eslint` plugin for _regular expressions_;
 - [vite-plugin-eslint](https://www.npmjs.com/package/vite-plugin-eslint) – `eslint` plugin for `Vite`;
-- [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr) – *SVGR* plugin for `Vite`, import **SVGs** as `React` components.
+- [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr) – **SVGR** plugin for `Vite`, import **SVGs** as `React` components.
 
 ### tsconfig.json
 
