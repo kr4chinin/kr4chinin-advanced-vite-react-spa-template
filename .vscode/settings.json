@@ -1,4 +1,5 @@
 {
+  "editor.lightbulb.enabled": "off",
 	"workbench.tree.indent": 12,
 	"workbench.tree.renderIndentGuides": "always",
 	"svg.preview.background": "dark-transparent",
