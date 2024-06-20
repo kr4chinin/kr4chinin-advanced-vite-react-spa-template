@@ -147,50 +147,50 @@ More information [here](https://vercel.com/docs/deployments/configure-a-build#bu
 
 ```json
 {
-  "compilerOptions": {
-    /* Base options */
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "target": "ESNext",
-    "verbatimModuleSyntax": false,
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
-    "useDefineForClassFields": true,
+	"compilerOptions": {
+		/* Base options */
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"target": "ESNext",
+		"verbatimModuleSyntax": false,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"isolatedModules": true,
+		"useDefineForClassFields": true,
 
-    /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "strictPropertyInitialization": false,
-    "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true,
-    "experimentalDecorators": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+		/* Strictness */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"strictPropertyInitialization": false,
+		"noFallthroughCasesInSwitch": true,
+		"forceConsistentCasingInFileNames": true,
+		"experimentalDecorators": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
 
-    /* TypeScript transpilation */
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "moduleResolution": "node",
-    "module": "esnext",
+		/* TypeScript transpilation */
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"moduleResolution": "node",
+		"module": "esnext",
 
-    /* Code runs in DOM */
-    "lib": ["dom", "dom.iterable", "esnext"],
+		/* Code runs in DOM */
+		"lib": ["dom", "dom.iterable", "esnext"],
 
-    /* Types */
-    "types": ["vite/client"],
+		/* Types */
+		"types": ["vite/client"],
 
-    /* Path Aliases */
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/*"]
-    }
-  },
-  "include": ["src"],
-  "exclude": ["node_modules"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+		/* Path Aliases */
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./src/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"],
+	"references": [{ "path": "./tsconfig.node.json" }]
 }
 ```
 
@@ -210,71 +210,71 @@ import eslint from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react({
-      babel: {
-        presets: ['@babel/preset-typescript'],
-        plugins: [
-          '@babel/plugin-transform-typescript',
-          '@babel/plugin-transform-class-properties',
-          [
-            // For styled components transform to readable classnames
-            // https://github.com/styled-components/babel-plugin-styled-components
-            'babel-plugin-styled-components',
-            {
-              ssr: false,
-              pure: true,
-              fileName: true,
-              displayName: true,
-            },
-          ],
-        ],
-      },
-    }),
-    // https://github.com/gxmari007/vite-plugin-eslint
-    eslint({
-      exclude: ['/virtual:/**', 'node_modules/**'],
-    }),
-    // https://github.com/pd4d10/vite-plugin-svgr#readme
-    // Imports should look like this – "import ReactLogo from './assets/react.svg?react';""
-    svgr(),
-  ],
-  // Will run on http://localhost:3000
-  server: {
-    port: 3000,
-    host: '0.0.0.0',
-  },
+	plugins: [
+		react({
+			babel: {
+				presets: ['@babel/preset-typescript'],
+				plugins: [
+					'@babel/plugin-transform-typescript',
+					'@babel/plugin-transform-class-properties',
+					[
+						// For styled components transform to readable classnames
+						// https://github.com/styled-components/babel-plugin-styled-components
+						'babel-plugin-styled-components',
+						{
+							ssr: false,
+							pure: true,
+							fileName: true,
+							displayName: true,
+						},
+					],
+				],
+			},
+		}),
+		// https://github.com/gxmari007/vite-plugin-eslint
+		eslint({
+			exclude: ['/virtual:/**', 'node_modules/**'],
+		}),
+		// https://github.com/pd4d10/vite-plugin-svgr#readme
+		// Imports should look like this – "import ReactLogo from './assets/react.svg?react';""
+		svgr(),
+	],
+	// Will run on http://localhost:3000
+	server: {
+		port: 3000,
+		host: '0.0.0.0',
+	},
 
-  build: {
-    // Enable minification of the output files
-    minify: true,
+	build: {
+		// Enable minification of the output files
+		minify: true,
 
-    // Directory to output the built files
-    outDir: 'build',
+		// Directory to output the built files
+		outDir: 'build',
 
-    // Generate source maps for debugging purposes
-    sourcemap: true,
+		// Generate source maps for debugging purposes
+		sourcemap: true,
 
-    // Enable CSS code splitting, which creates separate CSS files instead of inline styles
-    cssCodeSplit: true,
+		// Enable CSS code splitting, which creates separate CSS files instead of inline styles
+		cssCodeSplit: true,
 
-    // Directory for placing built assets (like images, fonts, etc.)
-    assetsDir: 'assets',
+		// Directory for placing built assets (like images, fonts, etc.)
+		assetsDir: 'assets',
 
-    // Rollup options for more granular control over the build process
-    rollupOptions: {
-      output: {
-        // Naming convention for chunk files
-        chunkFileNames: 'assets/[name].[hash].js',
+		// Rollup options for more granular control over the build process
+		rollupOptions: {
+			output: {
+				// Naming convention for chunk files
+				chunkFileNames: 'assets/[name].[hash].js',
 
-        // Naming convention for entry files
-        entryFileNames: 'assets/[name].[hash].js',
+				// Naming convention for entry files
+				entryFileNames: 'assets/[name].[hash].js',
 
-        // Naming convention for asset files (like images, fonts, etc.)
-        assetFileNames: 'assets/[name].[hash][extname]',
-      },
-    },
-  },
+				// Naming convention for asset files (like images, fonts, etc.)
+				assetFileNames: 'assets/[name].[hash][extname]',
+			},
+		},
+	},
 });
 ```
 

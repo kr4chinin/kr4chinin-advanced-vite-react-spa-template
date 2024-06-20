@@ -14,9 +14,9 @@ const root = createRoot(container);
 const router = createRouter();
 
 root.render(
-  <ErrorBoundary fallback={<div>Something went wrong!</div>}>
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
-  </ErrorBoundary>
+	<ErrorBoundary fallback={<div>Something went wrong!</div>}>
+		<QueryClientProvider client={queryClient}>
+			<RouterProvider router={router} />
+		</QueryClientProvider>
+	</ErrorBoundary>
 );

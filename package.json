@@ -1,92 +1,92 @@
 {
-  "name": "kr4chinin-advanced-vite-react-spa-template",
-  "private": false,
-  "version": "1.0.0",
-  "type": "module",
-  "author": "Ilya Kruchinin (https://github.com/kr4chinin)",
-  "description": "Full featured Vite React SPA template with TypeScript, ESLint, Prettier, Styled Components, React Query, Axios, React Router, Husky, Lint-Staged and Babel configurations and presets. It is a good starting point for your next project.",
-  "license": "MIT",
-  "packageManager": "npm@10.2.4",
-  "main": "index.tsx",
-  "engines": {
-    "npm": ">=8.0.0"
-  },
-  "keywords": [
-    "vite",
-    "react",
-    "spa",
-    "template",
-    "typescript",
-    "eslint",
-    "prettier",
-    "styled-components",
-    "react-query",
-    "axios",
-    "react-router",
-    "husky",
-    "lint-staged",
-    "babel",
-    "module",
-    "frontend",
-    "web",
-    "development"
-  ],
-  "scripts": {
-    "start": "vite",
-    "ts": "tsc --noEmit",
-    "build": "tsc && vite build",
-    "lint:ts": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
-    "format": "prettier --write .",
-    "preview": "vite preview",
-    "prepare": "npx husky"
-  },
-  "dependencies": {
-    "@tanstack/react-query": "^5.40.1",
-    "axios": "^1.7.2",
-    "normalize.css": "^8.0.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-error-boundary": "^4.0.13",
-    "react-router-dom": "^6.23.1",
-    "styled-components": "^6.1.11"
-  },
-  "devDependencies": {
-    "@babel/plugin-transform-class-properties": "^7.24.7",
-    "@babel/plugin-transform-typescript": "^7.24.7",
-    "@stylistic/eslint-plugin": "^2.1.0",
-    "@tanstack/eslint-plugin-query": "^5.35.6",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.12.0",
-    "@typescript-eslint/parser": "^7.12.0",
-    "@vitejs/plugin-react": "^4.3.0",
-    "babel-plugin-styled-components": "^2.1.4",
-    "eslint": "8.57.0",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-regexp": "^2.6.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.5",
-    "prettier": "^3.3.1",
-    "prettier-plugin-organize-imports": "^3.2.4",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.12",
-    "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-svgr": "^4.2.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "resolutions": {
-    "styled-components": "^6"
-  }
+	"name": "kr4chinin-advanced-vite-react-spa-template",
+	"private": false,
+	"version": "1.0.0",
+	"type": "module",
+	"author": "Ilya Kruchinin (https://github.com/kr4chinin)",
+	"description": "Full featured Vite React SPA template with TypeScript, ESLint, Prettier, Styled Components, React Query, Axios, React Router, Husky, Lint-Staged and Babel configurations and presets. It is a good starting point for your next project.",
+	"license": "MIT",
+	"packageManager": "npm@10.2.4",
+	"main": "index.tsx",
+	"engines": {
+		"npm": ">=8.0.0"
+	},
+	"keywords": [
+		"vite",
+		"react",
+		"spa",
+		"template",
+		"typescript",
+		"eslint",
+		"prettier",
+		"styled-components",
+		"react-query",
+		"axios",
+		"react-router",
+		"husky",
+		"lint-staged",
+		"babel",
+		"module",
+		"frontend",
+		"web",
+		"development"
+	],
+	"scripts": {
+		"start": "vite",
+		"ts": "tsc --noEmit",
+		"build": "tsc && vite build",
+		"lint:ts": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
+		"format": "prettier --write .",
+		"preview": "vite preview",
+		"prepare": "npx husky"
+	},
+	"dependencies": {
+		"@tanstack/react-query": "^5.40.1",
+		"axios": "^1.7.2",
+		"normalize.css": "^8.0.1",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-error-boundary": "^4.0.13",
+		"react-router-dom": "^6.23.1",
+		"styled-components": "^6.1.11"
+	},
+	"devDependencies": {
+		"@babel/plugin-transform-class-properties": "^7.24.7",
+		"@babel/plugin-transform-typescript": "^7.24.7",
+		"@stylistic/eslint-plugin": "^2.1.0",
+		"@tanstack/eslint-plugin-query": "^5.35.6",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@typescript-eslint/eslint-plugin": "^7.12.0",
+		"@typescript-eslint/parser": "^7.12.0",
+		"@vitejs/plugin-react": "^4.3.0",
+		"babel-plugin-styled-components": "^2.1.4",
+		"eslint": "8.57.0",
+		"eslint-config-react-app": "^7.0.1",
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-regexp": "^2.6.0",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.5",
+		"prettier": "^3.3.1",
+		"prettier-plugin-organize-imports": "^3.2.4",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.12",
+		"vite-plugin-eslint": "^1.8.1",
+		"vite-plugin-svgr": "^4.2.0"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"resolutions": {
+		"styled-components": "^6"
+	}
 }

@@ -1,11 +1,11 @@
 :root {
-  /* Fonts */
-  --system-font-families: -apple-system, 'system-ui', 'BlinkMacSystemFont', 'Segoe UI', 'Noto Sans',
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
-  --font-family-mono: ui-monospace, monospace;
+	/* Fonts */
+	--system-font-families: -apple-system, 'system-ui', 'BlinkMacSystemFont', 'Segoe UI', 'Noto Sans',
+		Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+		'Noto Color Emoji';
+	--font-family-mono: ui-monospace, monospace;
 
-  --stone-900: #1c1917;
-  --stone-950: #0c0a09;
-  --gray-900: #111827;
+	--stone-900: #1c1917;
+	--stone-950: #0c0a09;
+	--gray-900: #111827;
 }

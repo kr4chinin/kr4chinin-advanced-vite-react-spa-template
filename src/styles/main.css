@@ -4,14 +4,14 @@
 
 /* Apply a natural box layout model to all elements */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,
 body {
-  /* Font display strategy */
-  font-variant: normal;
-  font-feature-settings: normal;
-  -webkit-text-size-adjust: 100%;
-  font-family: var(--system-font-families);
+	/* Font display strategy */
+	font-variant: normal;
+	font-feature-settings: normal;
+	-webkit-text-size-adjust: 100%;
+	font-family: var(--system-font-families);
 }

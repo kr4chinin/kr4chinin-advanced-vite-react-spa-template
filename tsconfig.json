@@ -1,46 +1,46 @@
 {
-  "compilerOptions": {
-    /* Base options */
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "target": "ESNext",
-    "verbatimModuleSyntax": false,
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
-    "useDefineForClassFields": true,
+	"compilerOptions": {
+		/* Base options */
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"target": "ESNext",
+		"verbatimModuleSyntax": false,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"isolatedModules": true,
+		"useDefineForClassFields": true,
 
-    /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "strictPropertyInitialization": false,
-    "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true,
-    "experimentalDecorators": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+		/* Strictness */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"strictPropertyInitialization": false,
+		"noFallthroughCasesInSwitch": true,
+		"forceConsistentCasingInFileNames": true,
+		"experimentalDecorators": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
 
-    /* TypeScript transpilation */
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "moduleResolution": "node",
-    "module": "esnext",
+		/* TypeScript transpilation */
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"moduleResolution": "node",
+		"module": "esnext",
 
-    /* Code runs in DOM */
-    "lib": ["dom", "dom.iterable", "esnext"],
+		/* Code runs in DOM */
+		"lib": ["dom", "dom.iterable", "esnext"],
 
-    /* Types */
-    "types": ["vite/client"],
+		/* Types */
+		"types": ["vite/client"],
 
-    /* Path Aliases */
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/*"]
-    }
-  },
-  "include": ["src"],
-  "exclude": ["node_modules"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+		/* Path Aliases */
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./src/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"],
+	"references": [{ "path": "./tsconfig.node.json" }]
 }

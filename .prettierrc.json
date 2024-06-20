@@ -1,23 +1,23 @@
 {
-  "tabWidth": 2,
-  "useTabs": true,
-  "printWidth": 100,
-  "singleQuote": true,
-  "arrowParens": "avoid",
-  "trailingComma": "es5",
-  "plugins": ["prettier-plugin-organize-imports"],
-  "overrides": [
-    {
-      "files": "*.ts",
-      "options": {
-        "parser": "typescript"
-      }
-    },
-    {
-      "files": "*.js",
-      "options": {
-        "parser": "babel"
-      }
-    }
-  ]
+	"tabWidth": 2,
+	"useTabs": true,
+	"printWidth": 100,
+	"singleQuote": true,
+	"arrowParens": "avoid",
+	"trailingComma": "es5",
+	"plugins": ["prettier-plugin-organize-imports"],
+	"overrides": [
+		{
+			"files": "*.ts",
+			"options": {
+				"parser": "typescript"
+			}
+		},
+		{
+			"files": "*.js",
+			"options": {
+				"parser": "babel"
+			}
+		}
+	]
 }
