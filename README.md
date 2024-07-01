@@ -5,6 +5,8 @@ and tools. Perfect option to bootstrap your next project.
 
 - [kr4chinin advanced Vite React SPA template ⚛️](#kr4chinin-advanced-vite-react-spa-template-️)
   - [Quick start](#quick-start)
+    - [Unix-like systems (MacOS, Linux, etc.)](#unix-like-systems-macos-linux-etc)
+    - [Windows](#windows)
     - [Scripts](#scripts)
     - [Vercel Deployment](#vercel-deployment)
     - [Recommended VSCode extensions](#recommended-vscode-extensions)
@@ -19,6 +21,8 @@ and tools. Perfect option to bootstrap your next project.
 
 ## Quick start
 
+### Unix-like systems (MacOS, Linux, etc.)
+
 - In **existing** project directory:
 
 ```bash
@@ -30,6 +34,49 @@ npm install
 
 # initialize git
 rm -rf .git
+rm -rf LICENSE.txt README.md
+git init
+git add .
+git commit -m "chore: getting started"
+
+# initialize husky hooks
+npm run prepare
+
+# start development server
+npm start
+```
+
+- Same, but without **git** manipulations:
+
+```bash
+# clone repo
+git clone https://github.com/kr4chinin/kr4chinin-advanced-vite-react-spa-template .
+
+# install dependencies
+npm install
+
+# initialize husky hooks
+npm run prepare
+
+# start development server
+npm start
+```
+
+### Windows
+
+- In **existing** project directory:
+
+```bash
+# clone repo
+git clone https://github.com/kr4chinin/kr4chinin-advanced-vite-react-spa-template .
+
+# install dependencies
+npm install
+
+# initialize git
+rmdir /s /q .git
+rmdir /s /q LICENSE.txt
+rmdir /s /q README.md
 git init
 git add .
 git commit -m "chore: getting started"
@@ -112,6 +159,7 @@ More information [here](https://vercel.com/docs/deployments/configure-a-build#bu
 - [react-router-dom](https://reactrouter.com/en/main/start/overview) – routing library;
 - [axios](https://axios-http.com/) – _HTTP_ client;
 - [react-error-boundary](https://github.com/bvaughn/react-error-boundary) – error boundary component, handle **runtime errors** in a **safe** way;
+- [ts-reset](https://www.totaltypescript.com/ts-reset) – reset some of `TypeScript` compiler options.
 
 ### Tools
 
