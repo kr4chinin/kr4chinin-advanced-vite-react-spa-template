@@ -10,6 +10,7 @@ and tools. Perfect option to bootstrap your next project.
     - [Scripts](#scripts)
     - [Vercel Deployment](#vercel-deployment)
     - [Recommended VSCode extensions](#recommended-vscode-extensions)
+      - [VSCode settings](#vscode-settings)
   - [Tools and libraries](#tools-and-libraries)
     - [Libraries](#libraries)
     - [Tools](#tools)
@@ -146,6 +147,35 @@ More information [here](https://vercel.com/docs/deployments/configure-a-build#bu
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - to make **indentation** more visually noticeable;
 - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) - prettier icons;
 - [htmltagwrap](https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap) - easier work with `HTML` tags wrapping.
+
+#### VSCode settings
+
+`settings.json`:
+
+```json
+{
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"package.json": ".eslintignore, .eslintrc.cjs, .gitattributes, .gitignore, .lintstagedrc.json, .npmrc, .prettierignore, .prettierrc.json",
+		"README.md": "LICENSE.txt"
+	},
+	"editor.lightbulb.enabled": "off",
+	"workbench.tree.indent": 12,
+	"workbench.tree.renderIndentGuides": "always",
+	"svg.preview.background": "dark-transparent",
+	"eslint.validate": ["typescript", "typescriptreact"],
+	"typescript.tsdk": "node_modules/typescript/lib"
+}
+```
+
+- `fileNesting.enabled` – enable file nesting;
+- `fileNesting.patterns` – file nesting patterns, will ensure that files with specific names will be nested in the same directory as `package.json` file or `README.md` file, this is useful because listed files are not **frequently changed** ;
+- `editor.lightbulb.enabled` – disable lightbulb (this is opinionated, but it is often more annoying than helpful);
+- `workbench.tree.indent` – indentation for file tree;
+- `workbench.tree.renderIndentGuides` – render indent guides for file tree;
+- `svg.preview.background` – background color for **SVG** preview;
+- `eslint.validate` – enable **ESLint** extension validation for `TypeScript` and `TypeScript React` files;
+- `typescript.tsdk` – path to `TypeScript` compiler.
 
 ## Tools and libraries
 
