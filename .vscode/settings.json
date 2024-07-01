@@ -2,7 +2,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "package.json": ".eslintignore, .eslintrc.cjs, .gitattributes, .gitignore, .lintstagedrc.json, .npmrc, .prettierignore, .prettierrc.json",
-    "README.md": "LICENSE.txt",
+    "README.md": "LICENSE.txt"
   },
   "editor.lightbulb.enabled": "off",
 	"workbench.tree.indent": 12,
