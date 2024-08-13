@@ -7,7 +7,7 @@
 	"description": "Full featured Vite React SPA template with TypeScript, ESLint, Prettier, Styled Components, React Query, Axios, React Router, Husky, Lint-Staged and Babel configurations and presets. It is a good starting point for your next project.",
 	"license": "MIT",
 	"packageManager": "npm@10.2.4",
-	"main": "index.tsx",
+	"main": "./src/index.tsx",
 	"engines": {
 		"npm": ">=8.0.0"
 	},
