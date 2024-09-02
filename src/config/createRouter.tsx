@@ -1,5 +1,5 @@
 import { Link, createBrowserRouter } from 'react-router-dom';
-import { App } from '../App';
+import { App } from '~/App';
 
 export const createRouter = (): ReturnType<typeof createBrowserRouter> =>
 	createBrowserRouter([
