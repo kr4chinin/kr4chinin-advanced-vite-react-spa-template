@@ -22,6 +22,9 @@ module.exports = {
 
 		// Plugin for regex rules
 		'regexp',
+
+		// Plugin for React hooks rules
+		'react-hooks-extra',
 	],
 	parser: '@typescript-eslint/parser',
 	rules: {
@@ -74,5 +77,8 @@ module.exports = {
 				namedComponents: 'arrow-function',
 			},
 		],
+
+    // Warns if a component uses `useEffect` with a direct `setState` call
+		'react-hooks-extra/no-direct-set-state-in-use-effect': 'warn',
 	},
 };
