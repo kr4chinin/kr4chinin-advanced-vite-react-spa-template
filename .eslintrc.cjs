@@ -78,7 +78,7 @@ module.exports = {
 			},
 		],
 
-    // Warns if a component uses `useEffect` with a direct `setState` call
+		// Warns if a component uses `useEffect` with a direct `setState` call
 		'react-hooks-extra/no-direct-set-state-in-use-effect': 'warn',
 	},
 };
