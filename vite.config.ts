@@ -9,7 +9,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import eslint from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
 	plugins: [
 		tsconfigPaths(),
 		react({
@@ -53,8 +53,8 @@ export default defineConfig({
 		// Directory to output the built files
 		outDir: 'build',
 
-		// Generate source maps for debugging purposes
-		sourcemap: true,
+		// Generate source maps for debugging purposes in development environment
+		sourcemap: mode === 'development',
 
 		// Enable CSS code splitting, which creates separate CSS files instead of inline styles
 		cssCodeSplit: true,
@@ -76,4 +76,4 @@ export default defineConfig({
 			},
 		},
 	},
-});
+}));
